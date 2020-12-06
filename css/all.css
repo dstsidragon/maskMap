@@ -1,0 +1,526 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 響應式設計*/
+img{
+        max-width:100%;
+        height:auto;
+}
+/*從這行以下開始*/
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+  }
+  #map { width: 100%;height: 100%;
+    position: fixed;
+ }
+    .marker-cluster-small {
+          background-color: rgba(181, 226, 140, 0.6);
+          }
+    .marker-cluster-small div {
+          background-color: rgba(110, 204, 57, 0.6);
+          }
+  
+    .marker-cluster-medium {
+          background-color: rgba(241, 211, 87, 0.6);
+          }
+    .marker-cluster-medium div {
+          background-color: rgba(240, 194, 12, 0.6);
+          }
+  
+    .marker-cluster-large {
+          background-color: rgba(253, 156, 115, 0.6);
+          }
+    .marker-cluster-large div {
+          background-color: rgba(241, 128, 23, 0.6);
+          }
+  
+    .marker-cluster {
+          background-clip: padding-box;
+          border-radius: 20px;
+          }
+    .marker-cluster div {
+          width: 30px;
+          height: 30px;
+          margin-left: 5px;
+          margin-top: 5px;
+  
+          text-align: center;
+          border-radius: 15px;
+          font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+          }
+    .marker-cluster span {
+          line-height: 30px;
+          }
+
+map{
+    position: relative;
+    top: 0;
+    right: 0;
+} 
+    
+.close{
+    position: absolute;
+    top: 100px;
+    left:200px;
+    border: #000 solid 1px;
+    border-radius: 20px;                             
+}
+.openclose a{
+    text-decoration: none;
+    text-align: left;
+    font-size: 0px;
+            
+}
+        
+.openclose p{
+    position: absolute;
+    top:-15px;
+    left: 40px;      
+}
+.openclose :hover   {
+    font-size: 20px;
+    font-family: cursive;
+    color: rgb(59, 39, 39);
+    font-weight: bold;
+}
+        
+.open{
+    position: absolute;
+    top: 100px;
+    left:0px;
+    border: #000 solid 1px;
+    border-radius: 20px;
+    display: none;
+}
+    
+.menu{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    overflow: hidden;
+    max-width: 200px;
+                
+    }
+        
+.date{
+    max-width: 100%;
+    border-radius: 5px;
+    background: #73C0D8 ;
+           
+}  
+.day{
+    text-align: left;
+    font-size: 38px ;
+    color: #FFFFFF;
+    padding:20px;
+}     
+.yymmdd{
+    text-align: left;
+    font-size: 60%;
+    color: #FFFFFF;
+    position: absolute;
+    top:50px;
+    left:70%;
+        
+}   
+.idcanbuy{
+    text-align: left;
+    font-size: 8px;
+    color: #FFFFFF;
+    opacity: 1;
+    text-align: right;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    
+}
+        
+.idcode{
+    color: yellow;
+}
+        
+.areaselection{
+    
+    width: 100%;
+    border-radius: 5px;
+    background: #73C0D8 ;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+           
+            
+}
+.areaselection h2{
+    margin-bottom: 10px;
+    color: #FFFFFF;
+            
+        
+}
+.local{
+    font-size: 9PX;
+    width: 45%;
+    margin-bottom: 2px;
+}
+.local2{
+    font-size: 9PX;
+    width: 45%;
+   
+}
+        
+.information{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2px;
+}
+        
+        
+.informationList{
+            
+    height:100%;
+    border-radius: 5px;
+    background: white;
+    overflow: scroll;
+    scroll-behavior: smooth;
+            
+        
+}
+.infList{
+    border-bottom: gray solid 1px;
+    padding: 5px;
+           
+    background-color:wheat;
+            
+}
+              
+        
+.infList h2{
+    font-family: Bold;
+    font-size: 19px;
+            
+    margin-bottom: 8px;
+    font-weight:bold;
+    text-align: center;
+}
+.lii{
+    width: 100%;
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 0px;
+    color: BLUE;
+    margin-bottom: 5px;
+    line-height: 2;
+}
+.mask_adult{
+    text-align: left;
+    font: Bold 14px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    border-radius: 20px;
+    padding:5px;
+    margin-bottom: 10px;
+    text-align: center;
+           
+}
+.mask_child{
+    text-align: left;
+    font: Bold 14px ;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    border-radius: 20px;
+    padding:5px;
+    text-align: center;
+          
+}
+            
+        
+        
+.maskImg{
+    position: absolute;
+    top:0;
+    right: 0;
+    float: right;     
+    padding: 5px;
+           
+    }
+.maskImg h2{
+    font-size: 12px ;
+    color: red;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+    }
+          
+        
+.maskImg li{
+            
+    padding: 2px;
+    border-bottom: black 1px solid;
+    color:blue;
+    font-size: 6px ;
+    line-height: 12px;
+    font-weight: bold;
+    }
+
+.leaflet-popup-content{
+    width: 50%;
+    
+}
+    
+
+@media(max-width:767px){
+
+}
+
+@media(max-width:414px){
+
+    .close{
+        position: absolute;
+        left:155px;
+    }
+    
+    .menu{
+        width: 150px;
+            
+        }
+    
+    .date{
+        max-width: 100%;
+        border-radius: 5px;
+        background: #73C0D8 ;
+       
+    }  
+    .day{
+  
+        font-size: 26px ;
+        padding:10px;
+    }     
+    .yymmdd{
+        font-size: 10px ;
+        top:25px;
+        left:100px;
+    }   
+    .idcanbuy{
+        padding-bottom: 5px;
+        padding-right: 5px;
+        font-size: 10px ;
+    }
+
+
+    .local{
+        font-size:10PX;
+        width: 80%;
+        margin-bottom: 5px;
+        
+    }
+    .local2{
+        font-size: 10PX;
+        width: 80%;
+        margin-bottom: 5px;
+    }
+   .information{
+       height: 80%;
+   }
+
+
+    
+    .infList h2{
+
+        font-size: 15px;
+
+    }
+    .lii{
+       
+        font-size: 10px;  
+        line-height: 20px;
+    }
+    .mask_adult{
+
+        font-size:  12px;
+        font-weight: bold;
+   
+    }
+    .mask_child{
+        font-size:  12px;
+        font-weight: bold;
+      
+    }
+    
+    .maskImg h2{
+        font-size: 12px ;
+        color: red;
+        line-height: 24px;
+        border-bottom: black 1px solid;
+        }
+              
+            
+    .maskImg li{   
+        color:red;
+        font-size: 10px ;
+        line-height: 20px;
+        }
+
+    .maskImg img{
+        width: 10%;
+    }
+
+     
+   .leaflet-popup-content{
+        width: 30%;
+        
+    }
+
+    
+}
+
+
+@media(max-width:320px){
+
+    .close{
+        position: absolute;
+        left:155px;
+    }
+    
+    .menu{
+        width: 125px;
+            
+        }
+    
+    .date{
+        max-width: 100%;
+        border-radius: 5px;
+        background: #73C0D8 ;
+       
+    }  
+    .day{
+  
+        font-size: 18px ;
+        padding:10px;
+    }     
+    .yymmdd{
+        font-size: 8px ;
+        top:15px;
+        left:70px;
+    }   
+    .idcanbuy{
+        padding-bottom: 1px;
+        padding-right: 3px;
+        font-size: 1% ;
+    }
+
+
+    .local{
+        font-size:8PX;
+        width: 90%;
+        margin-bottom: 5px;
+        
+    }
+    .local2{
+        font-size: 8PX;
+        width: 90%;
+        margin-bottom: 5px;
+    }
+   .information{
+       height: 80%;
+   }
+
+
+    
+    .infList h2{
+
+        font-size: 14px;
+
+    }
+    .lii{
+       
+        font-size: 8px;  
+        line-height: 16px;
+    }
+    .mask_adult{
+
+        font-size:  8px;
+        font-weight: bold;
+   
+    }
+    .mask_child{
+        font-size:  8px;
+        font-weight: bold;
+      
+    }
+    
+    .maskImg h2{
+        font-size: 4px ;
+        color: red;
+        line-height: 12px;
+        border-bottom: black 1px solid;
+        }
+              
+            
+    .maskImg li{   
+        color:red;
+        font-size: 8px ;
+        line-height: 8px;
+        }
+
+    .maskImg img{
+        width: 8%;
+    }
+
+    .leaflet-popup-content{
+        width: 30%;
+        
+    }
+
+}
+

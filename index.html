@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable:no">
+    <title>口罩地圖查詢平台</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css"></link> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css"></link> 
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+    
+</head>
+<body>
+    <div id="map"></div>
+    <span class="openclose"><span class="open"><a href="*"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-right-512.png" width="30px"><p>打開選單</p></a></span>><span class="close"><a href="*"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-back-512.png" width="30px"><p>收合選單</p></a></span></span>
+
+   <div class="menu">
+    
+    <div class="date">
+        <h2 class="day"></h2>
+        <p class="yymmdd"></p>
+        <p class="idcanbuy"></p>                
+    </div>
+    <div class="areaselection"> <h2>選擇你的位置</h2>
+        <select name="local" class="local"></select>
+        <select name="local2" class="local2">
+            <option value="countryName">--請選擇行政區--</option>
+        </select>
+    </div>
+  
+    <div class="information">
+        <ul class="informationList"></ul>
+    </div>
+  
+   </div>
+   <span class="maskImg"><h2>口罩剩餘量<br>marker顏色對照</h2><ul>
+       <li><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-gold.png" alt="">成人兒童皆有</li>
+       <li><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png" alt="">只剩成人</li>
+       <li><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png" alt="">只有兒童</li>
+       <li><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png" alt="">成人兒童皆無</li>
+   </ul></span>
+   
+
+    <script src="js/all.js"></script>
+</body>
+</html>
